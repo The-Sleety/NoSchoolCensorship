@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleetyDev WebGames</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" id="favicon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <link href="https://eic-files.endinternetcensorship.repl.co/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      function navFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <style>
+    *{text-decoration:none;}.tn{width: 250px;background-color: #04AA6D;border-radius: 25px;border: 5px solid black;box-shadow: 5px 5px 50px grey;transition: all .2s ease-in-out;margin-left: 20px;margin-bottom: 30px;float: left;}.tn:hover{transform: scale(1.1);}.t,.lazy{padding-top: 15px;}.center{margin: 0 auto;width: 1150px;}.load{pointer-events:none;}.back-fix{background:black;}
+  </style>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="/" class="active">Games</a>
+    <div class="dropdown">
+      <button class="dropbtn">Retro
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://n64.boraon.repl.co" >N64</a>
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
+  </div>
+  <header style="padding-left: 10px">
+    <img src="img/logo.png" alt="logo" style="float: left; width: 50px; padding-right: 5px;">
+    <h1>SleetyDev WebGames</h1>
+  </header>
+<div class="container" style="margin-top: 0; margin: auto;">
+<p style="margin-bottom: 30px;">Games</p>
+<div class="center">
+<div class="tn">
+  <a onclick="start3Frame(); rFunction()">
+  <img src="img/sm64.webp" class="t" alt="sm64"><hr>
+  <h1>SM64</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFrame(); rFunction()">
+  <img src="img/slope.webp" class="t" alt="slope"><hr>
+  <h1>Slope</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://cookies.endinternetcensorship.repl.co" target="_blank">
+  <img src="img/cookie.webp" class="t" alt="cookie"><hr>
+  <h1>Cookie Clicker</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="start2Frame(); rFunction()">
+  <img src="img/minecraft.webp" class="t" alt="steve"><hr>
+  <h1>MinecraftJS</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://dino.endinternetcensorship.repl.co" target="_blank">
+  <img src="img/dino.png" class="t" alt="dino"><hr>
+  <h1>Chrome Dino</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://chroma.endinternetcensorship.repl.co" target="_blank">
+  <img src="img/chroma.png" class="t" alt="chroma"><hr>
+  <h1>Chroma</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://surf.endinternetcensorship.repl.co" target="_blank">
+  <img src="img/surf.webp" class="lazy" alt="surf"><hr>
+  <h1>Let's Surf</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://3d-city.endinternetcensorship.repl.co" target="_blank">
+  <img src="img/3dc.png" class="lazy" alt="city"><hr>
+  <h1>3D.City</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://cubefield.endinternetcensorship.repl.co" target="_blank">
+  <img src="img/cubefield.webp" class="lazy" alt="app"><hr>
+  <h1>Cubefield</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://radius-raid.endinternetcensorship.repl.co/" target="_blank">
+  <img src="img/rr.png" class="lazy" alt="app"><hr>
+  <h1>Radius Raid</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://flappy-2048.endinternetcensorship.repl.co/" target="_blank">
+  <img src="img/f2048.png" class="lazy" alt="app"><hr>
+  <h1>Flappy 2048</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://space-invaders.endinternetcensorship.repl.co/" target="_blank">
+  <img src="img/si.png" class="lazy" alt="app"><hr>
+  <h1>Space Invaders</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://sudoku-js.endinternetcensorship.repl.co/" target="_blank">
+  <img  class="lazy" data-src="img/sudoku.webp" alt="app"><hr>
+  <h1>Sudoku JS</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://break-lock.endinternetcensorship.repl.co/" target="_blank">
+  <img class="lazy" data-src="img/break-lock.png" alt="app"><hr>
+  <h1>BreakLock</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="start4Frame(); rFunction()">
+  <img class="lazy" data-src="img/hextris.png" alt="hextris-logo"><hr>
+  <h1>Hextris</h1>
+  </a>
+</div>
+<div class="tn">
+  <a href="https://bbasic.endinternetcensorship.repl.co/" target="_blank">
+  <img class="lazy" data-src="img/bbasic.webp" alt="baldi"><hr>
+  <h1>Baldi's Basics</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="start5Frame(); rFunction()">
+  <img class="lazy" data-src="img/tetris.webp" alt="tetris"><hr>
+  <h1>Tetris</h1>
+  </a>
+</div>
+<div class="tn">
+  <a target="_blank">
+  <img class="lazy" data-src="img/_.webp" alt="Coming Soon..."><hr>
+  <h3>Coming<br>Soon...</h3>
+  </a>
+</div>
+<div class="tn">
+  <a target="_blank">
+  <img class="lazy" data-src="img/_.webp" alt="Coming Soon..."><hr>
+  <h3>Coming<br>Soon...</h3>
+  </a>
+</div>
+</div>
+</div>
+<iframe style="width:100vw;height:100vh;max-width:none;position:absolute;top:0px;left:0px;z-index:5;" frameBorder="0" id="main" class="load" src="about:blank">
+</iframe>
+</body>
+
+<script>
+const favicon = document.getElementById("favicon");  
+var x = document.getElementById("main");
+$(function() {$('.lazy').Lazy();});
+function startFrame() {
+  x.src = "g-slope";
+}
+function start2Frame() {
+  x.src = "g-mjs";
+  favicon.setAttribute("href", "g-mjs/favicon.ico");
+}
+function start3Frame() {
+  x.src = "g-sm64";
+  favicon.setAttribute("href", "g-sm64/logo.png");
+}
+function start4Frame() {
+  x.src = "g-hextris";
+  favicon.setAttribute("href", "g-hextris/favicon.ico");
+}
+function start5Frame() {
+  x.src = "g-tetris";
+}
+function rFunction() {
+  x.classList.add('back-fix');
+  x.classList.remove("load");
+  x.focus();
+  $("#main").on('load',function() {
+        document.title = x.contentDocument.title;
+    });
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  document.body.style.overflow = 'hidden';
+    scrollTop = 
+      window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = 
+      window.pageXOffset || document.documentElement.scrollLeft,
+
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+</script>
+</html>
